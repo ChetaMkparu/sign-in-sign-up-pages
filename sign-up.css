@@ -72,6 +72,7 @@ header nav a {
   width: 600px;
   height: 30px;
   border-radius: 5px;
+  border: 1px solid #334155;
 }
 
 .nav_search input::placeholder {
@@ -258,6 +259,14 @@ header nav a {
   padding: 0.5rem 2rem;
   border-radius: 8px;
   width: 35%;
+}
+
+.siginup_facebook span {
+  color: #0866ff;
+}
+
+.signup_google span {
+  color: #ea4335;
 }
 
 /* social sign up logo's */
