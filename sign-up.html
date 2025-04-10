@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sign-up.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <!-- Nav section -->
+    <header>
+      <nav>
+        <div class="nav-logo">
+          <a href="#"><img src="./images/logo.svg" alt="Company Logo" /></a
+          ><span>Byway</span>
+        </div>
+        <a href="#">Categories</a>
+        <!-- Search -->
+        <form class="nav_search">
+          <i class="bx bx-search"></i>
+          <input type="search" placeholder="Search Courses" />
+        </form>
+        <a href="#">Teach On ByWay</a>
+        <div class="nav_btn">
+          <i class="bx bx-cart-alt"></i>
+          <button class="login">Login</button>
+          <button class="signup">Signup</button>
+        </div>
+        <!-- Toggle menu -->
+        <i class="bx bx-menu"></i>
+      </nav>
+    </header>
+    <main>
+      <!-- sign-up-page-content -->
+      <section class="signup_sec">
+        <!-- Sign-up-pg- (1st section) -->
+        <div class="signup_img">
+          <img src="./images/signup.png" alt="" />
+        </div>
+        <!-- Sign-up-pg- (2nd section) -->
+        <div class="signup_sec_wrapper">
+          <h3>Create your account</h3>
+          <!-- sign-up-form -->
+          <form action="" class="signup_form">
+            <!-- full name-form -->
+            <div class="fullname_form">
+              <label>Full Name</label>
+              <div class="fullname_input">
+                <input type="text" id="Firstname" placeholder="First Name" />
+                <input type="text" id="Lastname" placeholder="Last Name" />
+              </div>
+            </div>
+            <!-- username & email -->
+            <label for="Username">Username</label>
+            <input type="text" id="Username" placeholder="Username" />
+            <label for="Email">Email</label>
+            <input type="email" id="Email" placeholder="Email ID" />
+            <!-- password-form -->
+            <div class="password_form">
+              <!-- first-password- -->
+              <div class="password_one">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="Password"
+                  placeholder="Enter Password"
+                />
+              </div>
+              <!-- confirm-password-form -->
+              <div class="password_two">
+                <label for="Confirmpassword">Confirm Password</label>
+                <input
+                  type="password"
+                  id="ConfirmPassword"
+                  placeholder="ConfirmPassword"
+                />
+              </div>
+            </div>
+          </form>
+          <!-- sign-up-button -->
+          <button class="signup_btn">
+            <span>Sign Up</span>
+            <i class="bx bx-right-arrow-alt"></i></button
+          ><!-- Social-sign-up-line -->
+          <div class="signup_line">
+            <div class="line"></div>
+            <span>Sign up with</span>
+            <div class="line"></div>
+          </div>
+          <!-- Social-sign-up-buttons -->
+          <div class="signup_social">
+            <div class="siginup_facebook">
+              <img
+                src="./images/Facebook.svg"
+                alt="facebook-logo"
+                class="facebook"
+              />
+              <span>Facebook</span>
+            </div>
+            <div class="signup_google">
+              <img src="./images/google.svg" alt="google-logo" class="google" />
+              <span>Google</span>
+            </div>
+            <div class="signup_microsoft">
+              <img
+                src="./images/microsoft.png"
+                alt="google-logo"
+                class="microsoft"
+              />
+              <span>Microsoft</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

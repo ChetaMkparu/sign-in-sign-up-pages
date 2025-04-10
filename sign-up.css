@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* end of reset */
+
+/* Nav bar  */
+header {
+  padding-top: 1rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  padding-block: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+header nav a {
+  font-size: 14px;
+  color: #334155;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav_search {
+  position: relative;
+}
+
+.nav_search .bx-search {
+  position: absolute;
+  left: 15px;
+  top: 8px;
+  color: #3341559c;
+}
+
+.nav_search input {
+  width: 600px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.nav_search input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  padding-inline: 2.5rem;
+}
+
+.nav_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav_btn .bx-cart-alt {
+  font-size: 24px;
+}
+
+.bx-menu {
+  display: none;
+}
+
+.login {
+  width: 61px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #334155;
+}
+
+.signup {
+  width: 61px;
+  height: 40px;
+  color: #fff;
+  background-color: #334155;
+}
+
+/* End of Nav Bar Styling */
+
+/* Main content */
+.signup_sec {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+}
+
+.signup_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.signup_sec_wrapper {
+  width: 100%;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+}
+
+.signup_sec_wrapper h3 {
+  text-align: center;
+  font-weight: 600;
+  color: #0f172a;
+  font-size: 1.8rem;
+}
+
+/* Sign up form styling */
+.signup_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Styling for all the forms label's */
+.signup_form label {
+  font-weight: bolder;
+  margin-top: 1rem;
+  color: #0f172a;
+}
+/* End of styling for all the forms label's */
+
+.fullname_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fullname_form label {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.fullname_input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+#Firstname,
+#Lastname {
+  padding: 1rem 1rem;
+  width: 50%;
+}
+
+#Username,
+#Email {
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+.password_form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.password_one,
+.password_two {
+  width: 50%;
+}
+
+.password_one label,
+.password_two label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#Password,
+#ConfirmPassword {
+  padding: 1rem 1rem;
+  width: 100%;
+}
+
+/* Main content sign up button */
+.signup_btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #020617;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.signup_btn .bx-right-arrow-alt {
+  font-size: 1.5rem;
+}
+
+/* Social sign up line */
+.signup_line {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-top: 1.5rem;
+}
+
+.line {
+  border: 1px solid #94a3b8;
+  width: 40%;
+}
+
+.signup_line span {
+  width: 20%;
+  text-align: center;
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+/* Social sign up buttons */
+.signup_social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 2rem;
+}
+
+.siginup_facebook,
+.signup_google,
+.signup_microsoft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #b2b5c4;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  width: 35%;
+}
+
+/* social sign up logo's */
+.facebook,
+.google,
+.Microsoft {
+  width: 24px;
+  height: 24px;
+}
+
+/* Media Query Small screen */
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header nav {
+    padding: 1.3rem 2rem;
+    width: 100%;
+  }
+  header nav a,
+  .nav_search,
+  .nav_btn {
+    display: none;
+  }
+
+  .nav-logo a {
+    display: inline-block;
+  }
+
+  .bx-menu {
+    display: inline-block;
+    font-size: 40px;
+  }
+
+  .signup_sec {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+
+  .signup_img img {
+    display: none;
+  }
+
+  .fullname_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fullname_input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  #Firstname,
+  #Lastname {
+    padding: 1rem 1rem;
+    width: 100%;
+  }
+
+  .password_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .password_one,
+  .password_two {
+    width: 100%;
+  }
+
+  .signup_line span {
+    width: 50%;
+  }
+
+  .signup_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .signup_social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .siginup_facebook,
+  .signup_google,
+  .signup_microsoft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* Media query for medium screen */
+@media (min-width: 701px) and (max-width: 1023px) {
+  body {
+    overflow-x: hidden;
+  }
+  header nav {
+    padding: 1.3rem 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header nav a,
+  .nav_search,
+  .nav_btn {
+    display: none;
+  }
+
+  .nav-logo a {
+    display: inline-block;
+  }
+
+  .bx-menu {
+    display: inline-block;
+    font-size: 40px;
+  }
+
+  .signup_sec {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 3rem;
+  }
+
+  .signup_sec_wrapper {
+    width: 100%;
+  }
+
+  .signup_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .signup_img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .signup_line span {
+    width: 50%;
+  }
+
+  .signup_social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .siginup_facebook,
+  .signup_google,
+  .signup_microsoft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+/* Media query for extra large screens */
+@media (min-width: 1990px) {
+  body {
+    width: 70%;
+    margin: auto;
+  }
+}
